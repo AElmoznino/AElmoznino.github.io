@@ -20,7 +20,7 @@ nav li {
 	display: inline-block;
 }
 
-@media(max-width: 700px) {
+@media screen and (max-width: 700px) {
   .nav li {
     margin: -10px;
     padding-bottom: 7px;
@@ -30,6 +30,9 @@ nav li {
   .nav li a {
     padding:0 20px;
   }
+
+  ul { 
+    padding: 0 } 
 }
 
 nav li a { 
@@ -40,7 +43,7 @@ nav li a {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 0 36px;
+  padding: 0 20px;
 }
 
 nav li a:hover {
@@ -271,4 +274,10 @@ h3 {
   display: table;
   content: "";
   clear: both;
+}
+
+@media (max-width: 600px) {
+  #about img {
+    padding: 0px;
+  }
 }
