@@ -20,6 +20,18 @@ nav li {
 	display: inline-block;
 }
 
+@media(max-width: 700px) {
+  .nav li {
+    margin: -10px;
+    padding-bottom: 7px;
+    display: inline-block;
+  }
+
+  .nav li a {
+    padding:0 20px;
+  }
+}
+
 nav li a { 
   line-height: 50px;
   text-decoration: none;
