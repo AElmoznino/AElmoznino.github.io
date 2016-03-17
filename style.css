@@ -281,3 +281,27 @@ h3 {
     padding: 0px;
   }
 }
+
+@media (max-width: 772px) {
+  #about p {
+    margin: 18px;
+  }
+
+  #about h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #about h4 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .column-inner {
+    padding: 7% 19%;
+  }
+
+  .column-inner h3 {
+    margin-top:10px;
+  }
+}
