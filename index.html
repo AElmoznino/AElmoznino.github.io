@@ -1,153 +1,331 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Andre Elmoznino Laufer's Portfolio</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-	
-	<nav>
-		<ul>
-			<li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-			<li><a href="#about" class="smoothScroll">About Me</a></li>
-			<li><a href="#contact" class="smoothScroll">Contact</a></li>
-		</ul>
-	</nav>
-	
-	<section class="hero">
-		<h1>André Elmoznino Laufer</h1>
-
-		<h2>Web Portfolio</h2>
-		
-	</section>
-
-	<section class="portfolio" id="portfolio">
-		<h1>Check out my portfolio</h1>
-			
-			<div class="row">
-				<div class="column">
-					<div class="column-inner">
-						<a href="https://www.sparksbot.com" target="_blank"><img src="pics/sparks.png" /></a>
-						<h3>Sparks <br />Matchmaking Bot</h3>
-					</div>
+<!-- NAVBAR -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 nopadding">
+			<nav class="navbar navbar-default nav no-border blue-bg" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> 
 				</div>
-
-				<div class="column">
-					<div class="column-inner">
-						<a href="https://github.com/AElmoznino/NightOut" target="_blank"><img src="pics/nightout.jpeg"/></a>
-						<h3>Night Out Planner</h3>
-					</div>
+				<div class="collapse navbar-collapse centered" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#portfolio" class="smoothScroll">Portfolio</a>
+						</li>
+						<li>
+							<a href="#about" class="smoothScroll">About me</a>
+						</li>
+						<li>
+							<a href="#contact" class="smoothScroll">Contact</a>
+						</li>
+					</ul>
 				</div>
-
-				<div class="column">
-					<div class="column-inner">
-						<a href="https://github.com/AElmoznino/" target="_blank"><img src="pics/cook.jpeg" /></a>
-						<h3>More to come...</h3>
-					</div>
-				</div>
-			</div>
-
-<!-- 			<div class="row">
-				<div class="column">
-					<div class="column-inner">
-						<h3>Clock App</h3>
-						<a href="https://github.com/AElmoznino/personal-site" target="_blank"><img src="pics/clock.jpeg" /></a>
-					</div>
-				</div>
-
-				<div class="column">
-					<div class="column-inner">
-						<h3>Calculator App</h3>
-						<a href="https://github.com/AElmoznino/personal-site" target="_blank"><img src="pics/calc.jpeg"/></a>
-					</div>
-				</div>
-
-				<div class="column">
-					<div class="column-inner">
-						<h3>Photo App</h3>
-						<a href="https://github.com/AElmoznino/personal-site" target="_blank"><img src="pics/photo.jpeg"/></a>
-					</div>
-				</div>
-			</div> -->
-	</section>
-
-<div style="clear: both;"></div>
-
-	<section id="about" class="about">
-
-		<h1>About Me</h1>
-
-		<div class="container">
-			<div class="row">
-				<div class="blue">
-				<div class="column-70">
-					<div class="column-70-inner">
-						<h3>Quick Facts</h3>
-						
-						<div class="left">
-							<p><strong>Name:</strong> André Elmoznino Laufer</p>
-							<p><strong>Age:</strong> 28</p>
-							<p><strong>Nationality:</strong> Swedish</p>
-							<p><strong>Languages:</strong> Swedish, English, Hebrew, French, Mandarin</p>
-							<p><strong>Hobbies:</strong> Travelling, Cooking, Baking, Running, Swimming</p>
-						</div>
-						
-					<div style="clear: both;"></div>
-					</div>
-				</div>
-
-				<!--This is the right side col-30 pic -->
-				<div class="column-30">
-					<div class="column-30-inner">
-						<div class="column-30-inner-pic">
-								<img src="pics/profile.jpg" />
-						</div>
-					</div>
-				</div>
-				</div>
-		</div> <!-- Ending the row class-->
-	
-
-		<div style="clear: both;"></div>
-
-		<div class="col-hor-bottom">
-			<div class="col-hor-bottom-inner">
-			<h3>Curriculum Vitae</h3>
-				<h4>Work Experience</h4>
-					<p><strong>Head of Growth &amp; Inbound Marketing</strong> - SaferVPN - Tel Aviv, Israel, 2014-2015</p>
-					<p><strong>Marketing Consultant</strong> - Student Mundial - Tel Aviv, Israel, 2014-2015</p>
-					<p><strong>Investment Analyst</strong> - Maverick Ventures - Tel Aviv, Israel, 2014</p>
-					<p><strong>Executive Assistant</strong> - Urban Meridian - Houston, USA, 2014</p>
-				<h4>Education</h4>
-					<p><strong>Elevation Academy</strong> - Coding Bootcamp - Tel Aviv, Israel, 2016</p>
-					<p><strong>Tel Aviv University</strong> - Entrepreneurship - Tel Aviv, Israel, 2013</p>
-					<p><strong>Harvard University</strong> - Corporate Strategy - Boston, USA, 2012</p>
-					<p><strong>Peking University</strong> - Business &amp; Economics - Beijing, China, 2011</p>
-					<p><strong>Stockholm University</strong> - Msc Business &amp; Economics - Stockholm, Sweden, 2008-2012</p>
-					
-			</div>
+			</nav>
 		</div>
+	</div>
 </div>
 
-		<div style="clear: both;"></div>
-
-	</section>
-
-
-	<section id="contact">
-		<h4 class="contact">Reach me by email at <a href="mailto:andre.elmoznino@gmail.com" target="_blank">andre.elmoznino@gmail.com</a></h4>
-		<!-- For the Android app: -->
-		<!-- <h4 class="contact">Call me at <a href="tel:00972534208007">+972-53-4208007</a> or <a href="sms:00972534208007">text me</a>.</h4> -->
-		<h4 class="contact">... or connect with me on <a href="https://se.linkedin.com/in/andreelmoznino" target="_blank">LinkedIn</a></h4>
-	</section>
+<!-- HERO -->
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header hero">
+			<h1>André Elmoznino Laufer</h1>
+			<h2>Web Portfolio</h2>
+		</div>
+	</div>
+</div>
 
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<div class="row">
+	<div class="col-md-12 portfolio blue-bg" id="portfolio">
+		<div>
+			<h1>
+				Check out my portfolio
+			</h1>
+		</div>
+		<div class="row mb">
+			<div class="col-md-4">
+				<a href="https://www.sparksbot.com" target="_blank"><img src="pics/sparks.png" class="img-responsive"/></a>
+				<h3>Sparks</h3>
+				<p>Initiated a Messenger chatbot project for which I built a responsive landing page, set up AWS CloudFront, Google Analytics, SSL, Gzip, Mailchimp, Open Graph Data &amp; DNS.</p>
+			</div>
+			<div class="col-md-4">
+				<a href="https://fanco.herokuapp.com/" target="_blank"><img src="pics/fanco.png" class="img-responsive" /></a>
+				<h3>FanCo</h3>
+				<p>Hackathon project assigned by IBM. Implemented D3.js charts, AngularJS and a scheduled
+				automatic SMS weather alert using a cronjob, forecast.io’s API and Twilio’s API.</p>
+			</div>
+			<div class="col-md-4">
+				<a href="https://github.com/AElmoznino/NightOut" target="_blank"><img src="pics/nightout.jpeg" class="img-responsive" /></a>
+				<h3>Night Out Planner</h3>
+				<p>BackboneJS app that helps groups plan the perfect night out, using Google Places API for data.</p>
+			</div>			
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+				<div class="col-md-12 about" id="about">
+					<div>
+						<h1>
+							About Me
+						</h1>
+					</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 blue-bg mb">
+							<div class="row">
+								<div class="col-md-8">
+									<h3>Mission</h3>
+									<h5>Curious and well-rounded junior fullstack web developer with a business background looking for an entry-level front-end position. I want to work agile, be data-driven, never stop learning and have a friendly mentor to work closely with.</h5>
+									<h3>Quick Facts</h3>
+									<h5><strong>Name:</strong> André Elmoznino Laufer</h5>
+									<h5><strong>Age:</strong> 28</h5>
+									<h5><strong>Nationality:</strong> Swedish</h5>
+									<h5><strong>Languages:</strong> Swedish, English, Hebrew, French, Mandarin</h5>
+									<h5><strong>Hobbies:</strong> Travelling, Cooking, Baking, Running, Swimming</h5>
+								</div>
+								<div class="col-md-4">
+									<img alt="André Elmoznino Laufer Thumbnail" src="pics/profile.jpg" class="img-responsive" id="profile-thumbnail" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 blue-bg">
+							<h3>
+								WORK EXPERIENCE
+							</h3>
+
+							<!-- START OF PANEL GROUP -->
+							<div class="panel-group" id="panel-1">
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-1" href="#panel-element-1"><strong>Head of Growth &amp; Inbound Marketing</strong> - SaferVPN - Tel Aviv, Israel, 2014-2015</span></a>
+									</div>
+									<div id="panel-element-1" class="panel-collapse collapse">
+										<div class="panel-body">
+										<ul>
+										<li>First employee at a venture-backed startup, responsible for customer acquisition &amp; inbound marketing.</li>
+										<li>Email Marketing: I built a >200k subscribers email funnel, all coded by me in HTML and CSS.</li>
+										<li>Designated as the team’s Scrum Master. I mentored our interns in online marketing.</li>
+										<li>Results: Increased customers by >10x, website’s Organic Search traffic by 28x and overall Social traffic by 21x.</li>
+										<li>Additional tasks in: Blogging (>40k monthly readers), PR (featured in <em>USA TODAY</em> &amp; <em>BBC News</em>), SEO, Social Media Marketing, Affiliate Marketing, Conversion Rate Optimization, Recording screencasts for <a href="https://www.youtube.com/safervpn" target="_blank">YouTube</a>, Copywriting.</li>
+										</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-1" href="#panel-element-2"><strong>Marketing Consultant</strong> - Student Mundial - Tel Aviv, Israel, 2014-2015</a>
+									</div>
+									<div id="panel-element-2" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Managed Inbound Marketing, including SEO, blogging, Social Media Marketing, &amp; Business Development.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-1" href="#panel-element-3"><strong>Investment Analyst</strong> - Maverick Ventures - Tel Aviv, Israel, 2014</a>
+									</div>
+									<div id="panel-element-3" class="panel-collapse collapse">
+										<div class="panel-body">
+										<ul>
+											<li>Attended venture capital conferences, pitches and seminars.</li>
+											<li>Screened for interesting startups to invest in.</li>
+										</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-1" href="#panel-element-4"><strong>Executive Assistant Intern</strong> - Urban Meridian - Houston, USA, 2014</a>
+									</div>
+									<div id="panel-element-4" class="panel-collapse collapse">
+										<div class="panel-body">
+										<ul>
+											<li>Tasks in marketing, accounting &amp; financial modelling.</li>
+											<li>Complemented by 180 hour Real Estate Salesperson License prep course (required by the Texas Real Estate Commission to become a licensed real estate agent in the state of Texas).</li>
+										</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-1" href="#panel-element-5"><strong>Intern</strong> - Swedish-American Chambers of Commerce - Washington DC, USA, 2013</a>
+									</div>
+									<div id="panel-element-5" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul>
+											<li>Sold the Trainee Program to prospect host companies in the U.S., marketed it towards Swedish students and partnered with Swedish universities.</li>
+											<li>Implemented a time- and cost-saving Applicant Tracking System to streamline recruiting.</li>
+											<li>Initiated and lectured at a seminar in Houston for potential host companies.</li>
+											<li>Responsible for social media, writing articles, managing our website and blogging.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- END OF PANEL GROUP -->
+					<h3>EDUCATION</h3>
+							<div class="panel-group" id="panel-2">
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-2" href="#panel-element-10"><strong>Elevation Academy</strong> - Coding Bootcamp - Tel Aviv, Israel, 2016</a>
+									</div>
+									<div id="panel-element-10" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Full-time full stack web development course focusing on the MEAN stack (MongoDB, ExpressJS, AngularJS &amp; NodeJS).</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-2" href="#panel-element-11"><strong>Tel Aviv University</strong> - Entrepreneurship - Tel Aviv, Israel, 2013</a>
+									</div>
+									<div id="panel-element-11" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Exchange semester. Courses in: ‘Strategic Innovation’, ‘Hi-Tech M&amp;A’, ‘Trends’ and  ‘Tech Ventures’. GPA: 90/100.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-2" href="#panel-element-12"><strong>Harvard University</strong> - Corporate Strategy - Boston, USA, 2012</a>
+									</div>
+									<div id="panel-element-12" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Summer courses in ‘Strategic Management’ and ‘Corporate Strategy’. GPA: 4/4.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-2" href="#panel-element-14"><strong>Stockholm University</strong> - Msc Business &amp; Economics - Stockholm, Sweden, 2008-2012</a>
+									</div>
+									<div id="panel-element-14" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>A four year ‘Civilekonomexamen’, major in Finance. Best in class in the ‘Company Valuation’ course. GPA: B (from A to E).</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-2" href="#panel-element-13"><strong>Peking University</strong> - Business &amp; Economics - Beijing, China, 2011</a>
+									</div>
+									<div id="panel-element-13" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Exchange semester. Courses in business, management, Chinese, history, culture and international finance. GPA: 3.8/4.</p>
+										</div>
+									</div>
+								</div>
+
+							</div> <!-- CLOSES THE PANEL GROUP 2 -->
+
+						<h3> EXTRACURRICULAR ACTIVITIES & VOLUNTEERING</h3>
+						<div class="panel-group" id="panel-3">
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-3" href="#panel-element-20"><strong>2nd prize, London Startup Weekend Food Edition</strong> - London, United Kingdom, 2015</a>
+									</div>
+									<div id="panel-element-20" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>I did validation &amp; customer research for <em>Recipes for Now</em>. Accepted to Cinnamon Bridge’s pre-accelerator Startup Bootcamp.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-3" href="#panel-element-21"><strong>2nd prize, Stockholm Startup Weekend IoT Edition</strong> - Stockholm, Sweden, 2015</a>
+									</div>
+									<div id="panel-element-21" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>I was Scrum Master and did market research for <em>Voluntinder</em>. Invited to pitch at Stockholm Startup Day 2016.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-3" href="#panel-element-22"><strong>Teaching Volunteer</strong> - AIESEC - Cape Coast, Ghana, 2013</a>
+									</div>
+									<div id="panel-element-22" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Taught and tutored IT and Mathematics to kids in grades 5 and 6 at three different schools.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-3" href="#panel-element-23"><strong>President, Finance Society</strong> - Stockholm University - Stockholm, Sweden, 2011-2012</a>
+									</div>
+									<div id="panel-element-23" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul>
+											<li>Organized meetups, started a female finance students network and initiated a weekly market newsletter.</li>
+											<li>Increased website visits by +400%, members by +25% and tripled number of events.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+
+								</div><!-- END OF PANEL 3-->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-12 mt mb">
+		<div class="contact" id="contact">
+			<h4 class="contact">Connect with me:</h4>
+				<div class="social-icons col-md-8 col-md-offset-2 text-center">
+					<a href="mailto:andre.elmoznino@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a href="https://github.com/AElmoznino" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+					<a href="https://se.linkedin.com/in/andreelmoznino" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+				</div>		
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="smoothscroll.js"></script>
 
 </body>
