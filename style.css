@@ -166,7 +166,7 @@ nav li a:hover {
   margin: 0 40px 0 40px;
 }
 
-.portfolio img {
+.grayscale {
   padding: 50px;
   filter: grayscale(0.8);
   -webkit-filter: grayscale(0.8);
@@ -175,7 +175,7 @@ nav li a:hover {
   -ms-filter: grayscale(0.8);
 }
 
-.portfolio img:hover {
+.grayscale:hover {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
